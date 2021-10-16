@@ -1,0 +1,20 @@
+{
+	"/hello": {
+		"_body": "The base64 encoded body response. Allows returning arbitrary data if wanted.",
+		"Body": "SGVsbG8h",
+		"_status": "the status code to return.",
+		"Status": 200,
+		"_headers": "the map of headers to return",
+		"Headers": {
+			"Some-Header": "some value"
+		},
+		"_deleteHeaders": "if true, ALL other headers are deleted (sans status)",
+		"DeleteHeaders": false
+	},
+	"/webhook": {
+		"_decodedBody": "the raw string returned if you dont need to return something difficult.",
+		"DecodedBody": "OK",
+		"Status": 200,
+		"Headers": {}
+	}
+}
